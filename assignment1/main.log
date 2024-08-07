@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  7 AUG 2024 03:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  7 AUG 2024 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1349,29 +1349,12 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Overfull \hbox (8.07721pt too wide) in paragraph at lines 132--132
-[]\OT1/txr/m/n/12 max$[] \OML/txmi/m/it/12 <$\OT1/txr/m/n/12 max$[]$ 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-Overfull \hbox (16.02916pt too wide) in paragraph at lines 132--132
-[]\OT1/txr/m/n/12 max$[] \OML/txmi/m/it/12 <$\OT1/txr/m/n/12 min$[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
-[]\OT1/txr/m/n/12 (d) in-finitely many
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-[2
+] [2
 
 ] (./main.aux)
 
@@ -1384,13 +1367,13 @@ Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30542 strings out of 476091
- 600348 string characters out of 5794082
- 1895330 words of memory out of 5000000
- 50199 multiletter control sequences out of 15000+600000
+ 30537 strings out of 476091
+ 600218 string characters out of 5794082
+ 1890330 words of memory out of 5000000
+ 50194 multiletter control sequences out of 15000+600000
  569240 words of font info for 145 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,6n,96p,1172b,592s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,6n,96p,1172b,690s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1399,7 +1382,7 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 49929 bytes).
+Output written on main.pdf (2 pages, 49879 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  133 compressed objects within 2 object streams
