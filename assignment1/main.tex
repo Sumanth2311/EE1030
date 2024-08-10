@@ -1,0 +1,215 @@
+% \iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+\parindent 0px
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Quadratic Equation and Inequalition(Inequalities)}
+
+\author{AI24BTECH11027 - R Sumanth }
+\maketitle 
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\section*{C\quad\quad MCQs with One Correct Answer}
+\begin{enumerate}
+
+\item If $l,m,n$ are real, $l\neq m$, then the roots by the equation: 
+\hfill (1979)
+ $\brak{l-m}x^2-5\brak{l+m}x-2\brak{l-m}$
+\begin{enumerate}
+\item Real and equal
+\item complex
+\item Real and unequal
+\item None of the above 
+\end{enumerate}
+\item The equation $x+2y+2z=1$ and $2x+4y+4z=9$ have \hfill (1979)
+\begin{enumerate}
+\item Only one solution
+\item Only two solutions
+\item Infinite number of solutions
+\item None of these.
+\end{enumerate}
+\item if $x,y$ and $z$ are real and different and 
+$u=x^2+4y^2+9z^2-6yz-3zx-2xy$, then u is always.
+\hfill (1979)
+\begin{enumerate}
+\item non negative
+\item zero
+\item non positive
+\item none of the above
+\end{enumerate}
+\item let $a>0,b>0$ and $c>0$.Then the roots of  the equation 
+$ax^2+bx+c=0$ \hfill (1979)
+\begin{enumerate} 
+\item are real and negative
+\item have negative real parts
+\item both (a) and (b)
+\item none of the above
+\end{enumerate}
+\item Both the roots of the equations 
+$\brak{x-b}\brak{x-c}+\brak{x-a}\brak{x-c}+\brak{x-a}\brak{x-b} = 0$ are always\hfill (1980)
+\begin{enumerate} 
+\item positive
+\item real
+\item negative
+\item none of these.
+\end{enumerate}
+\item The least value of the expression $2log_{10} x-log_x\brak{0.01}$,for $x>1$,is \hfill (1980)
+\begin{enumerate} 
+\item $10$
+\item $2$
+\item $-0.01$
+\item none of these.
+\end{enumerate}
+\item If $\brak{x^2+px+1}$ is a factor of $\brak{ax^3+bx+c}$, then \hfill (1980)
+\begin{enumerate} 
+\item $a^2+c^2=-ab$
+\item $a^2-c^2=-ab$
+\item $a^2-c^2=ab$
+\item none of these
+\end{enumerate}
+\item The no of real solution in equation $\abs{x^2}-3\abs{x}+2=0$ is \hfill (1982 - 2 Marks)
+\begin{enumerate} 
+\item $4$
+\item $1$
+\item $3$
+\item $2$
+\end{enumerate}
+\item Two towns A and B are $60$ km apart. A school is to built to serve $150$ students in a town B. If the total distance to be travelled by all $200$ students is to be as small as possible, then the school should be build at \hfill (1982 - 2 Marks)
+\begin{enumerate}
+\item town B
+\item $45$ km from town A
+\item town A
+\item $45$ km from town B
+\end{enumerate}
+\item If $p,q,r$ are any real numbers, then 
+
+\hfill (1982 - 2 Marks)
+\begin{enumerate}
+\item max$\brak{p,q,r}<$max$\brak{p,q}$
+\item min$\brak{p,q}=\frac{1}{2}\brak{p+q-\abs{p-q}}$
+\item max$\brak{p,q}<$min$\brak{p,q,r}$
+\item  none of these
+\end{enumerate}
+\item The largest interval for which $x^{12}-x^9+x^4-x+1>0$ is \hfill (1982 - 2 Marks)
+\begin{enumerate}
+\item $-4<x\leq0$
+\item $0<x<1$
+\item $-100<x<100$
+\item $-\infty<x<\infty$
+\end{enumerate}
+\item The equation $x-\frac{2}{x-1}=1-\frac{2}{x-1}$ has
+
+\hfill (1984 - 2 marks)
+\begin{enumerate}
+\item no root
+\item one root
+\item two equal roots
+\item infinitely many roots 
+\end{enumerate}
+\item If $a^2+b^2+c^2=1$, then $ab+bc+ca$ lies in the interval \hfill (1984 - 2 Marks)
+\begin{enumerate}
+\item $[\frac{1}{2},2]$
+\item $[-1,2]$
+\item $[-\frac{1}{2},1]$
+\item $[-1,\frac{1}{2}]$
+\end{enumerate}
+\item If $log_{0.3}\brak{x-1}<log_{0.09}\brak{x-1}$,then $x$ lies in the interval 
+\hfill (1985 - 2 Marks)
+\begin{enumerate}
+\item $\brak{2,\infty}$
+\item $\brak{1,2}$
+\item $\brak{-2,-1}$
+\item none of these
+\end{enumerate}
+\item If $\alpha,\beta$ are the roots of $x^2+px+q=0$ and $\alpha^4,\beta^4$ are the roots of $x^2-rx+s=0$. then the equation $x^2-4qx+2q^2-r=0$ has always
+ 
+\hfill(1989 - 2 Marks)
+\begin{enumerate}
+\item two real roots
+\item two positive roots
+\item two negative roots
+\item one positive and one negative root
+
+\end{enumerate}
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
