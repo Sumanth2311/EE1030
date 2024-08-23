@@ -39,7 +39,7 @@ ax.add_collection3d(poly3d)
 ax.scatter(vertices[:, 0], vertices[:, 1], vertices[:, 2], color='r', s=50)
 
 # Annotate the vertices
-for i, txt in enumerate(['A', 'B', 'C', 'D']):
+for i, txt in enumerate(['A(-1, 2, 1)', 'B(1, -2, 5)', 'C(4, -7, 8)', 'D(2, -3, 4)']):
     ax.text(vertices[i, 0], vertices[i, 1], vertices[i, 2], txt, color='k', fontsize=12)
 
 # Set labels
