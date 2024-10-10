@@ -1,0 +1,84 @@
+%iffalse           
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\usepackage{circuitikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{Assignment-2}
+\author{AI24BTECH11027- R Sumanth % <-this % stops a space
+}
+\maketitle
+\bigskip
+
+\textbf{\section{Intersection of Conics(CBSE)}}
+
+\textbf{Question:}  Find the length of the intercept cut off by the plane $2x+y-z=5$ on the $x$-axis .
+\begin{table}[h!]
+\renewcommand{\thetable}{1}
+    \centering
+   \input{tables/table.tex}
+   \def\tablename{Table}
+   \caption{Variables Used}
+\end{table}
+
+\solution  Equation of plane $\vec{n}^\top \vec{x} = 5 $ \\
+$\vec{p}$ be intercept on $x$-axis\\
+
+\begin{align}
+    \vec{p} &= \myvec{x \\ 0\\ 0\\}\\
+    \vec{n}^ \top \brak{\vec{x}-\vec{p}} &=  0 \\
+    \vec{n}^\top\vec{x}-\vec{n}^\top\vec{p}&=0 \\
+    5-2\vec{x}&=0 \\
+    \vec{x}=\frac{5}{2}
+\end{align}
+Therefore, the length of the intercept cut off by the plane on the $x$-axis is $\frac{5}{2}$ or $2.5$
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.7]{IMG.jpg}
+	\label{Fig}
+\end{figure}
+
+\end{document}  
