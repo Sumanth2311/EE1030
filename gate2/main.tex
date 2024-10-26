@@ -1,0 +1,175 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}
+
+%\def\inputGnumericTable{}                                
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{\textbf{2010-XE-27-39}}
+\author{AI24BTEC11027 - R Sumanth}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\columnsep}{2.5em}
+\begin{enumerate}
+
+\item Let $f(x+iy)=u(x,y)+iv(x,y)$ be an analytic defined on the complex plane satisfying $2u^2+3v^2=1.$ then 
+\begin{enumerate}
+    \item f is a constant
+    \item $f(z)=kz$ some nonzero real number $k$
+    \item $u(x,y)=\frac{\cos(x+y)}{\sqrt{2}}$
+    \item $v(x,y)=\frac{\sin(x-y)}{\sqrt{3}}$ \\
+\end{enumerate}
+
+\item The value of $\oint_c (xy^2+2x)dx+(x^2y+4x)dy$ along the circle $C:x^2+y^2=4$ in the anticlockwise direction is
+\begin{enumerate}
+    \item $-16\pi$
+    \item $-4\pi$
+    \item $4\pi$
+    \item $16\pi$ \\
+\end{enumerate}
+
+\item The volume of the prism whose base is the triangle in the $xy$-plane bounded by the x-axis and the lines $y=x$ and $x=2$ and whose top lies in the plane $z=5-x-y$ is 
+\begin{enumerate}
+    \item $2$
+    \item $4$
+    \item $6$
+    \item $10$ \\
+\end{enumerate}
+
+\item The general solution of $x(z^2-y^2)\frac{\partial z}{\partial x}+y(x^2-z^2)\frac{\partial z}{\partial y}=z(y^2-x^2)$ is 
+\begin{enumerate}
+    \item $F(x^2+y^2+z^2,xyz)=0$
+    \item $F(x^2+y^2-Z^2,xyz)=0$
+    \item $F(x^2-y^2+Z^2,xyz)=0$
+    \item $F(-x^2+y^2+Z^2,xyz)=0$ \\
+\end{enumerate}
+
+\item Choose a point uniformly distributed at random on the disc $x^2+y^2\leq1$. Let the random variable $X$ denote the distance of this point from the center of the disc. Then the variance of $X$ is 
+\begin{enumerate}
+    \item $\frac{1}{16}$
+    \item $\frac{1}{17}$
+    \item $\frac{1}{18}$
+    \item $\frac{1}{19}$ \\
+\end{enumerate}
+    
+\item If Runge-kutta method of order 4 is used to solve the differential equation $\frac{dy}{dx}=f(x),y(0)=0$ in the interval $[0.h]$ with step size $h$, then 
+\begin{enumerate}
+    \item $y(h)=\frac{h}{6}[f(0)+4f(h/2)+f(h)]$
+    \item $y(h)=\frac{h}{6}[f(0)+4f(h)]$
+    \item $y(h)=\frac{h}{2}[f(0)+4f(h)]$
+    \item $y(h)=\frac{h}{6}[f(0)+2f(h/2)+f(h)]$ \\
+\end{enumerate}
+
+\item If a polynomial of degree three interpolates a function $f(x)$ at the points $(0, 3), (1,13),(3,99)$ and $(4,187),$ then $f(2)$ is 
+\begin{enumerate}
+    \item $20$
+    \item $36$
+    \item $43$
+    \item $58$ \\
+\end{enumerate}
+
+\item Let $f:R\rightarrow R$ be defined by $f(x)=x^2$ for $-\pi \leq x \leq \pi$ and $f(x+2\pi)=f(x).$ 
+The Fourier series of $f$ in $[-\pi,\pi]$ is 
+\begin{enumerate}
+    \item $\frac{\pi^2}{3}+4\sum_{n=1}^\infty \frac{\cos nx}{n^2}$
+    \item $\frac{\pi^2}{3}+\sum_{n=1}^\infty \frac{(-1)^n \cos nx}{n^2}$
+    \item $\frac{\pi^2}{3}+4\sum_{n=1}^\infty \frac{(-1)^n \cos nx}{n^2}$
+    \item $\frac{\pi^2}{3}+\sum_{n=1}^\infty \frac{\cos nx}{n^2}$ \\
+\end{enumerate}
+
+
+\item Let $f:R\rightarrow R$ be defined by $f(x)=x^2$ for $-\pi \leq x \leq \pi$ and $f(x+2\pi)=f(x).$  
+The sum of the absolute value of the Fourier coefficients of $f$ is
+\begin{enumerate}
+    \item $\frac{\pi^2}{6}$
+    \item $\frac{\pi^2}{3}$
+    \item $\frac{2\pi^2}{3}$
+    \item $\pi^2$ \\
+\end{enumerate}
+
+\item Let $y(x)=\sum_{n=0}^\infty a_n x^n$ be a solution of the differential equation $\frac{d^2 y}{dx^2}+xy=0.$
+The value of $a_{11}$ is 
+\begin{enumerate}
+    \item 0
+    \item 1
+    \item 2 
+    \item 3 \\
+\end{enumerate}
+
+\item Let $y(x)=\sum_{n=0}^\infty a_n x^n$ be a solution of the differential equation $\frac{d^2 y}{dx^2}+xy=0.$
+The value of $a_11$ is The solution of the differential equation given above satisfying $y(0)=1$ and $y'(0)=0$ is 
+\begin{enumerate}
+    \item $y(x)=1+\frac{1}{2.3}x^2-\frac{1}{2.3.5.6}x^4+\frac{1}{2.3.5.6.8.9}x^6-....$
+    \item $y(x)=1-\frac{1}{2.3}x^2+\frac{1}{2.3.5.6}x^4-\frac{1}{2.3.5.6.8.9}x^6+....$
+    \item $y(x)=1+\frac{1}{2.3}x^3-\frac{1}{2.3.5.6}x^6+\frac{1}{2.3.5.6.8.9}x^9-....$
+    \item $y(x)=1-\frac{1}{2.3}x^3-\frac{1}{2.3.5.6}x^6-\frac{1}{2.3.5.6.8.9}x^9+....$ \\
+\end{enumerate}
+
+\item The potential $u(x,y)$ satisfies the equation $\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}=0$ in the square $0 \leq x \leq \pi, 0\leq y \leq \pi.$ Three of the edges $x=0$ and $y=0$ of the square are kept at zero potential and the edge $y=\pi$ is kept at nonzero potential. the potential $u(x,y)$ is given by 
+\begin{enumerate}
+ \item $u(x,y)=\sum_{n=1}^\infty A_n \cos h nx \sin ny$
+ \item $u(x,y)=\sum_{n=1}^\infty A_n \sin nx \cosh ny$
+ \item $u(x,y)=\sum_{n=1}^\infty A_n \sin h nx \sin ny$
+ \item $u(x,y)=\sum_{n=1}^\infty A_n \sin nx \sin h ny$ \\
+\end{enumerate}
+
+\item The potential $u(x,y)$ satisfies the equation $\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}=0$ in the square $0 \leq x \leq \pi, 0\leq y \leq \pi.$ Three of the edges $x=0$ and $y=0$ of the square are kept at zero potential and the edge $y=\pi$ is kept at nonzero potential. If the edge $y=\pi$ is kept at the potential $\sin x$, then the potential $u(x,y)$ is given by 
+\begin{enumerate}
+    \item$u(x,y)=\sum_{n=1}^\infty \frac{\sin nx \sin h ny}{\sin h n \pi}$
+    \item$u(x,y)=\frac{\sin x \sin h y}{\sin h \pi}$
+    \item$u(x,y)=\frac{\sin x \cos h y}{\cos h \pi}$
+    \item$u(x,y)=\sum_{n=1}^\infty \frac{\cos hnx \sin ny}{\cos h n \pi}$
+\end{enumerate}
+\end{enumerate}
+\end{document}
