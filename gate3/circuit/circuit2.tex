@@ -1,0 +1,17 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw  (4.75,7) rectangle (7.25,4.5);
+\draw [->, >=Stealth] (6,6) -- (6,3.5);
+\draw [<->, >=Stealth] (3.75,7) -- (3.75,4.5);
+\node [font=\LARGE] at (6,3) {$W$ };
+\node [font=\LARGE] at (3.25,5.75) {$a$};
+\draw (3.25,7) to[short] (4.25,7);
+\draw (3.25,4.5) to[short] (4.25,4.5);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

@@ -1,0 +1,48 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Large]
+\node [font=\LARGE] at (1,15.25) {};
+\begin{scope}[rotate around={-90:(-5.5,15.25)}]
+\draw[domain=-5.5:1,samples=100,smooth] plot (\x,{1*sin(1*\x r +5.5 r ) +15.25});
+\end{scope}
+\begin{scope}[rotate around={85.5:(-5.75,12)}]
+\draw[domain=-5.75:-2.5,samples=100,smooth] plot (\x,{1*sin(1*\x r +5.75 r ) +12});
+\end{scope}
+\draw [short] (-5.5,15.25) -- (1.25,15.25);
+\draw [short] (-5.25,8.75) -- (-1.75,8.75);
+\draw [short] (-1.75,8.75) -- (-1.75,3.75);
+\draw [short] (-1.75,3.75) -- (3.75,3.75);
+\draw [short] (3.75,3.75) -- (3.75,10);
+\draw [short] (-1.25,8.75) -- (-1.25,4.25);
+\draw [short] (-1.25,4.25) -- (3,4.25);
+\draw [short] (3,4.25) -- (3,10);
+\draw [short] (-1.25,8.75) -- (0.5,8.75);
+\draw [short] (0.5,8.75) .. controls (1.75,10) and (1.75,10.25) .. (3,10);
+\draw [short] (1.25,15.25) .. controls (5,13) and (5.5,13.5) .. (9,15.25);
+\draw [short] (9,15.25) -- (16,15.25);
+\draw [short] (3.75,10) .. controls (5.75,10.25) and (6,9.5) .. (6.25,8.75);
+\draw [short] (6.25,8.75) -- (16,8.75);
+\begin{scope}[rotate around={-92.25:(16,15.25)}]
+\draw[domain=16:22.5,samples=100,smooth] plot (\x,{1*sin(1*\x r -16 r ) +15.25});
+\end{scope}
+\begin{scope}[rotate around={-90:(16.25,12.25)}]
+\draw[domain=16.25:19.75,samples=100,smooth] plot (\x,{1*sin(1*\x r -16.25 r ) +12.25});
+\end{scope}
+\draw [->, >=Stealth] (-2.25,12) -- (2.75,12);
+\draw [->, >=Stealth] (7.25,12.25) -- (12.25,12.25);
+\draw [->, >=Stealth] (4.75,15.5) -- (4.75,13.75);
+\draw [->, >=Stealth] (-2.75,17) -- (-2.75,15.25);
+\node [font=\Large] at (1,3) {Mercury Manometer};
+\draw (-1.75,5) to[short] (-1.25,5);
+\draw (3,6.25) to[short] (3.75,6.25);
+\node [font=\Large] at (-2.75,17.75) {diameter $0.25 m$};
+\node [font=\Large] at (5,16) {diameter $0.125m$};
+\node [font=\Large] at (-3.25,12.75) {$1.$};
+\node [font=\Large] at (6.25,12.75) {$2.$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

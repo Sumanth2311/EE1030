@@ -1,0 +1,157 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv} 
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows} 
+
+%\def\inputGnumericTable{}                                
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{\textbf{2014-XE-40-52}}
+\author{AI24BTEC11027 - R Sumanth}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\columnsep}{2.5em}
+\begin{enumerate}
+
+\item A fluid is flowing through a pipe of circular cross-section, Reynolds number of the flow is $1600$. the head loss over a $45$ m length of the pipe is $0.6 $m. The average flow velocity of the fluid is $1$ m/s and the acceleration due to gravity is $10 m/s^2$. The diameter of the pipe is $\underline{\hspace{1cm}}$m.\\
+
+\item Consider a laminar flow over a flat plate of width $w$. At section $1-1$, the velocity profile is uniform as shown in the figure. The $x-$ direction velocity profile at section $2-2$ is given by $\frac{u}{U}=2\frac{y}{\delta}-\brak{\frac{y}{\delta}}^2$, where $\delta$ is the boundary layer thickness. 
+\input{circuit/circuit1.tex}
+The volume flow rate through section $2-2$ is given by 
+\begin{enumerate}
+    \item $\frac{1}{2}Uw\delta$
+    \item $\frac{1}{3}Uw\delta$
+    \item $Uw\delta$
+    \item $\frac{2}{3}Uw\delta$
+\end{enumerate}
+\item A cube of weight $W$ and side a falls at a constant speed in a medium as shown in the figure. If the medium is air (mass density = $\rho$ air) let $U$air be the velocity of the cube . If the medium is water (mass density = $\rho$ water) let $U$ water be the velocity od the cube. 
+\input{circuit/circuit2.tex}
+Neglecting the buoyancy force and assuming drag coefficient to be same for both cases, the ratio of velocities, $\frac{U_air}{U_water}$ is given by 
+\begin{enumerate}
+    \item $\frac{\rho_{air}}{\rho_{water}}$
+    \item $\sqrt{\frac{\rho_{air}}{\rho_{water}}}$
+    \item $1$
+    \item $\sqrt{\frac{\rho_{water}}{\rho_{air}}}$\\
+\end{enumerate}
+\item Water is flowing through a venturimeter having a diameter of $0.25$ m at the entrance (station $1$) and $0.125$m at the throat (station $2$) as shown in the figure. A mercury manometer measure the piezometric head difference between stations $1$ and $2$ as $1.3505$m. The loss of head between these two stations, is $\frac{1}{7}$ times the velocity head at the station $2$. Assume the acceleration due to gravity to be $10 m/s^2$. The velocity of water at the throat is $\underline{\hspace{1cm}} m/s.$\\
+\input{circuit/circuit3}
+
+\item Neoprene is rendered non-inflammable because 
+\begin{enumerate}
+    \item it has a highly cross-linked structure 
+    \item it has a highly linear chain structure 
+    \item of the presence of chlorine atom in the structure 
+    \item of the absence of chlorine atom in the structure \\
+\end{enumerate}
+\item Nylone-$6$ is manufactured from 
+\begin{enumerate}
+    \item caprolactum 
+    \item adipic acid ad hexamethylene diamine 
+    \item malcic anhydride and hexamethylene diamine 
+    \item secasic acid and hexamethylene diamine\\
+\end{enumerate}
+\item At room temperature, the typical barrier potential for silicon p-n junction in Volt(V) is 
+\begin{enumerate}
+    \item $0.7\times 10^{-23}$
+    \item $0.07$
+    \item $0.70$
+    \item $7.0$\\
+\end{enumerate}
+\item Quantitative measurements of the roughness of a polysilicon wafer can be performed with 
+\begin{enumerate}
+    \item scanning tunneling microscopy 
+    \item scanning electron microscopy
+    \item transmission electron microscopy 
+    \item atomic force microscopy\\
+\end{enumerate}
+\item The temperature of the antiferromagnetic-to-paramagnetic transition is called 
+\begin{enumerate}
+    \item Curic temperature
+    \item Curie-weiss temperature 
+    \item Neel temperature
+    \item Debye temperature \\
+\end{enumerate}
+\item At low injection level, a forward biased p-n junction would have 
+\begin{enumerate}
+    \item no charge carriers
+    \item minority carrier concentration much more than majority carrier concentration
+    \item minority carrier concentration  equal to majority carrier concentration
+    \item minority carrier concentration much less than majority carrier concentration\\
+\end{enumerate}
+\item Which of the following mechanical properties of a material depend on the mobile dislocation density in it.\\
+(P) Young's modulus (Q) yield strength (R) ductility (S) fracture toughness
+\begin{enumerate}
+    \item $P,Q,R$
+    \item $Q,R,S$
+    \item $P,R,S$
+    \item $S,P,Q$
+\end{enumerate}
+\item The equilibrium concentration of vacancies in a pure metal 
+\begin{enumerate}
+    \item increase exponentially with temperature 
+    \item decrease exponential with temperature 
+    \item varies linearly with temperature 
+    \item is independent of temperature 
+\end{enumerate}
+\item The materials belonging to which one of the following crystal classes would be both piezoelectric
+\begin{enumerate}
+    \item $222$
+    \item $4mm$
+    \item $\Bar{1}$
+    \item $2/m$
+    
+\end{enumerate}
+\end{enumerate}
+\end{document}
