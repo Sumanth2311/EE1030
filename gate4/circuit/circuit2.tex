@@ -1,0 +1,45 @@
+\begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (-23.5,-37.5) to[short, -o] (-25,-37.5) ;
+\draw (-23.75,-35) to[short, -o] (-25,-35) ;
+\draw (-23.75,-32.5) to[short, -o] (-25,-32.5) ;
+\draw (-23.75,-30) to[short, -o] (-25,-30) ;
+\draw (-23.75,-30) to[short] (-17.5,-30);
+\draw (-23.5,-37.5) to[short] (-13.75,-37.5);
+\draw (-13.75,-37.5) to[short] (-13.75,-36.25);
+\draw (-23.75,-35) to[short] (-20,-35);
+\draw (-20,-35) to[short] (-20,-36.25);
+\draw (-20,-36.25) to[short] (-19,-35.25);
+\draw (-18.25,-34.5) to[short] (-17,-33.25);
+\draw (-17.25,-33.5) to[short] (-16.75,-33);
+\draw (-17.5,-32.5) to[short] (-24,-32.5);
+\draw (-16.75,-33) to[short] (-16.75,-31.75);
+\draw (-17.5,-30) to[short] (-16.75,-30);
+\draw (-16.75,-30) to[short] (-16.75,-30.75);
+\draw (-18,-34.25) to[C] (-19.5,-35.75);
+\draw (-16.75,-30.5) to[R] (-16.75,-32);
+\node at (-16.75,-33) [circ] {};
+\draw (-17.25,-32.5) to[short] (-17.75,-32.5);
+\draw (-15.75,-34) to[L ] (-14,-35.75);
+\draw (-17.25,-32.5) to[short] (-15.5,-34.25);
+\draw (-14.25,-35.5) to[short] (-13.75,-36);
+\draw (-13.75,-36) to[short] (-13.75,-36.75);
+\draw [->, >=Stealth] (-23.75,-30) -- (-22.5,-30);
+\draw [->, >=Stealth] (-21.5,-32.5) -- (-22.5,-32.5);
+\draw [->, >=Stealth] (-23.5,-35) -- (-22.5,-35);
+\draw [->, >=Stealth] (-23.75,-37.5) -- (-22.5,-37.5);
+\node [font=\LARGE] at (-25.75,-30) {$a$};
+\node [font=\LARGE] at (-25.5,-32.5) {$n$};
+\node [font=\LARGE] at (-25.5,-35) {$c$};
+\node [font=\LARGE] at (-25.75,-37.5) {$b$};
+\node [font=\LARGE] at (-16,-31.5) {$R$};
+\node [font=\LARGE] at (-14,-34) {$j10$};
+\node [font=\LARGE] at (-17.75,-35.5) {$-j10$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

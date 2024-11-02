@@ -1,0 +1,28 @@
+\begin{figure}[H]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (-1.25,17.5) to[L ] (5,17.5);
+\draw (5,17.5) to[R] (5,15);
+\draw (3.25,17.5) to[C] (3.25,15);
+\draw (-1.25,15) to[short] (5,15);
+\draw [->, >=Stealth] (1.25,18.25) -- (2.25,18.25);
+\draw [->, >=Stealth] (-1.25,16.25) -- (-0.25,16.25);
+\node at (-1.25,17.5) [circ] {};
+\node at (-1.25,15) [circ] {};
+\node at (3.25,15) [circ] {};
+\node at (3.25,17.5) [circ] {};
+\node [font=\LARGE] at (-2,17.5) {$v(t)$};
+\node [font=\LARGE] at (-1.75,15) {$b$};
+\node [font=\LARGE] at (0.75,18) {$i(t)$};
+\node [font=\LARGE] at (2,15.75) {$100 \mu F$};
+\node [font=\LARGE] at (6.25,16) {$100\Omega$};
+\node [font=\LARGE] at (-1.25,14.75) {$-$};
+\node [font=\LARGE] at (-1.25,17.75) {$+$};
+\node [font=\LARGE] at (1.75,16.75) {$L$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

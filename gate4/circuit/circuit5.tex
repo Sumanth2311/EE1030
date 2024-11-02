@@ -1,0 +1,87 @@
+\begin{figure}[H]
+\centering
+\resizebox{0.7\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (-7.5,14.75) to[short] (-7.5,10);
+\draw (-7.5,10) to[short] (-2,10);
+\draw (-7.5,16.25) to[short] (-7.5,18.75);
+\draw (-5,18.75) to[short] (-5,13.25);
+\draw (-7.5,18.75) to[short] (-5,18.75);
+\draw (-5.25,18.75) to[short] (-3.75,18.75);
+\draw (-2.5,18.75) to[short] (-1.25,18.75);
+\draw (-7.5,13.25) to[short] (3.5,13.25);
+\draw (-2,15.25) node[ieeestd buffer port, anchor=in, rotate=-270](port){} (port.out) to[short] (-2,18.75);
+\draw (port.in) to[short] (-2,13.25);
+\draw (-1.25,18.75) to[L ] (3.5,18.75);
+\draw (3.5,18.75) to[R] (3.5,13.25);
+\draw (2.5,18.75) to[C] (2.5,13.25);
+\draw (1.75,18.75) to[short] (1.75,12);
+\draw (1.75,12) to[L ] (-2.75,12);
+\draw (-2,10.25) node[ieeestd buffer port, anchor=in, rotate=-270](port){} (port.out) to[short] (-2,12);
+\draw (port.in) to[short] (-2,10);
+\draw (-5,13.5) to[short] (-5,12);
+\draw (-5,12) to[short] (-4.5,12);
+\draw (-4.5,12) to[short] (-3.75,12.75);
+\draw (-2.75,12) to[short] (-3.5,12);
+\draw (-3.75,18.75) to[short] (-3,19.5);
+\draw (-2.25,16.5) to[short] (-1.75,16.5);
+\draw (-2.25,11.5) to[short] (-1.75,11.5);
+\draw  (-7.5,15.5) circle (0.75cm);
+\node at (-7.5,13.25) [circ] {};
+\node at (-4.5,12) [circ] {};
+\node at (-3.5,12) [circ] {};
+\node at (2.5,13.25) [circ] {};
+\node at (2.5,18.75) [circ] {};
+\node at (1.75,18.75) [circ] {};
+\node at (-2,18.75) [circ] {};
+\node at (-2.5,18.75) [circ] {};
+\node at (-3,19.5) [circ] {};
+\node at (-3.75,18.75) [circ] {};
+\node at (-5,18.75) [circ] {};
+\draw [dashed] (6,13.5) -- (6,13.5);
+\draw [dashed] (5,13.75) -- (15,13.75);
+\draw [dashed] (5.75,16.25) -- (5.75,10.25);
+\draw [dashed] (5,11.25) -- (14.75,11.25);
+\draw (5,13.75) to[short] (5.75,13.75);
+\draw (5.75,13.75) to[short] (5.75,15.75);
+\draw (5.75,15.75) to[short] (8.75,15.75);
+\draw (8.75,15.75) to[short] (8.75,13.75);
+\draw (8.75,13.75) to[short] (11.25,13.75);
+\draw (11.25,13.75) to[short] (11.25,15.75);
+\draw (11.25,15.75) to[short] (13.75,15.75);
+\draw (13.75,15.75) to[short] (13.75,13.75);
+\draw (5,13) to[short] (5.75,13);
+\draw (5.75,13) to[short] (5.75,11.25);
+\draw (5.75,11.25) to[short] (8.75,11.25);
+\draw (8.75,11.25) to[short] (8.75,13);
+\draw (8.75,13) to[short] (11.25,13);
+\draw (11.25,13) to[short] (11.25,11.25);
+\draw (11.25,11.25) to[short] (13.5,11.25);
+\draw (13.75,11.25) to[short] (13.75,13);
+\draw (13.75,11.25) to[short] (12.75,11.25);
+\draw (13.75,13) to[short] (14.75,13);
+\draw [->, >=Stealth] (13.75,13.75) -- (14.75,13.75);
+\draw [->, >=Stealth] (14.25,11.25) -- (14.75,11.25);
+\node [font=\LARGE] at (-9,15.5) {$100v$};
+\node [font=\LARGE] at (-4.5,19.75) {$i_{S1}$};
+\node [font=\LARGE] at (-0.5,11.25) {$L$};
+\node [font=\LARGE] at (2.25,15.5) {$C$};
+\node [font=\LARGE] at (4.25,16.25) {1$\Omega$};
+\node [font=\LARGE] at (-3,18) {$S1$};
+\node [font=\LARGE] at (-3.75,11.25) {$S2$};
+\node [font=\LARGE] at (1,18) {L};
+\node [font=\LARGE] at (5.25,12.25) {$S1$};
+\node [font=\LARGE] at (5.25,14) {$S2$};
+\node [font=\LARGE] at (5.25,10.25) {$0$};
+\node [font=\LARGE] at (8.5,10.5) {$0.5 ms$};
+\node [font=\LARGE] at (11.25,10.5) {$1 ms$};
+\node [font=\LARGE] at (9.5,16.5) {Switch control signals};
+\node [font=\LARGE] at (15.25,13.5) {$t$};
+\node [font=\LARGE] at (15.25,11) {$t$};
+\draw [->, >=Stealth] (-5,19.25) -- (-3.75,19.25);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

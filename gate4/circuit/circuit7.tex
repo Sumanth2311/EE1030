@@ -1,0 +1,39 @@
+\begin{figure}[H]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\node at (0,17.5) [circ] {};
+\draw (0,17.5) to[R] (2.5,17.5);
+\draw (2.5,17.5) to[L ] (5,17.5);
+\draw (5,17.5) to[short] (5,16.75);
+\draw (4.25,16.75) to[short] (5.75,16.75);
+\draw (5.75,16.75) to[R] (5.75,14.25);
+\draw (5.75,14.25) to[L ] (5.75,12);
+\draw (4.25,16.75) to[L ] (4.25,12);
+\draw (4.25,12) to[short] (5.75,12);
+\draw (5,12) to[short] (5,11.25);
+\draw (4.25,11.25) to[short] (5.75,11.25);
+\draw (5.75,11.25) to[R] (5.75,8.75);
+\draw (5.75,8.75) to[L ] (5.75,6.5);
+\draw (4.25,11.25) to[L ] (4.25,6.5);
+\draw (4.25,6.5) to[short] (5.75,6.5);
+\draw (5,6.5) to[short] (5,5.5);
+\draw (5,5.5) to[short] (0,5.5);
+\node at (0,5.5) [circ] {};
+\draw [->, >=Stealth] (0,12.25) -- (0,17);
+\draw [->, >=Stealth] (0,11.25) -- (0,6.25);
+\node [font=\LARGE] at (1.25,11.75) {$V\angle 0\degree$};
+\node [font=\LARGE] at (1.25,18.25) {$R_1$};
+\node [font=\LARGE] at (3.75,18.5) {$jX_{l1}$};
+\node [font=\LARGE] at (3.25,14.5) {$j \frac{X_M}{2}$};
+\node [font=\LARGE] at (7.5,13.25) {$j\frac {X_l2^1}{2}$};
+\node [font=\LARGE] at (3.25,8.75) {$j \frac{X_M}{2}$};
+\node [font=\LARGE] at (7.75,10) {$\frac{R_2^1}{2(2-s)}$};
+\node [font=\LARGE] at (7.75,8) {$j \frac{X_{l2}^1}{2}$};
+\node [font=\LARGE] at (7.25,15.5) {$\frac{R_2^1}{2s}$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

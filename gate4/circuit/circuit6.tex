@@ -1,0 +1,33 @@
+\begin{figure}[H]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (2.5,13.75) to[battery1] (2.5,8.75);
+\draw (2.5,13.75) to[L ] (8.75,13.75);
+\draw (9.875,13.75) node[ieeestd buffer port, anchor=in](port){} (port.out) to[short] (12.5,13.75);
+\draw (port.in) to[short] (8.75,13.75);
+\draw (12.5,13.75) to[battery1] (12.5,8.75);
+\draw [->, >=Stealth] (2.5,13.75) -- (3.75,13.75);
+\node [font=\LARGE] at (2.75,11.5) {$+$};
+\node [font=\LARGE] at (2.75,11) {$-$};
+\node [font=\LARGE] at (1.5,10.5) {$50 V$};
+\node [font=\LARGE] at (3.5,11.25) {$B1$};
+\node [font=\LARGE] at (3.25,14.25) {$i_L$};
+\node [font=\LARGE] at (6,14.75) {$L=5 mH$};
+\node [font=\LARGE] at (7,11.5) {$S$};
+\node [font=\LARGE] at (10.5,14.75) {$D$};
+\node [font=\LARGE] at (11.75,11.25) {$B2$};
+\node [font=\LARGE] at (13,11.5) {$+$};
+\node [font=\LARGE] at (12.75,10.75) {$-$};
+\node [font=\LARGE] at (14,11.25) {$150 V$};
+\draw (11,14.25) to[short] (11,13.25);
+\draw (7.5,13.75) to[short] (7.5,11.75);
+\draw (7.5,11.75) to[short] (8.25,11);
+\draw (7.5,10.5) to[short] (7.5,8.75);
+\draw (2.5,8.75) to[short] (12.5,8.75);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

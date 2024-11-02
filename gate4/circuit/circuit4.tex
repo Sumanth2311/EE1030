@@ -1,0 +1,39 @@
+\begin{figure}[H]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (-2.5,16.25) to[sinusoidal voltage source, sources/symbol/rotate=auto] (-2.5,10);
+\draw (-2.5,16.25) to[short] (-1.25,16.25);
+\draw (-2.5,10) to[short] (-1.25,10);
+\draw (-1.25,17.5) to[short] (1.25,17.5);
+\draw (-1.25,17.5) to[short] (-1.25,8.75);
+\draw (-1.25,8.75) to[short] (1.25,8.75);
+\draw (1.25,8.75) to[short] (1.25,17.5);
+\draw (1.25,16.25) to[short, -o] (2.25,16.25) ;
+\draw (1.25,10) to[short, -o] (2.25,10) ;
+\draw (2.25,16.25) to[short] (3.75,16.25);
+\draw (2.25,10) to[short] (3.75,10);
+\draw (3.75,16.25) to[R] (3.75,13.75);
+\draw (3.75,10) to[battery1] (3.75,11.25);
+\draw (3.75,14) to[L ] (3.75,11.25);
+\draw (0,12.25) node[ieeestd buffer port, anchor=in, rotate=-270](port){} (port.out) to[short] (0,14.75);
+\draw (port.in) to[short] (0,11.25);
+\draw [short] (-1,13.5) -- (1,13.5);
+\draw (0,13.5) to[short, -o] (0.5,14) ;
+\draw [->, >=Stealth] (2.5,11.25) -- (2.5,15.25);
+\node [font=\LARGE] at (-4.75,13.25) {$V_m sin(\omega t$)};
+\node [font=\LARGE] at (2,13.75) {$v_0$};
+\node [font=\LARGE] at (4,10.75) {$+$};
+\node [font=\LARGE] at (2.5,9.75) {$-$};
+\node [font=\LARGE] at (4.5,15.25) {$2\Omega$};
+\node [font=\LARGE] at (5,12.5) {$10mH$};
+\node [font=\LARGE] at (4.75,10.75) {$80 V$};
+\node [font=\LARGE] at (4.75,10) {$battery$};
+\node [font=\LARGE] at (4,10.5) {$-$};
+\node [font=\LARGE] at (2.5,16.5) {$+$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
