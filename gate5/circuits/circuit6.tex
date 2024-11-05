@@ -1,0 +1,43 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+
+\draw  (-6.25,21.25) rectangle (-2.5,17.5);
+\draw  (0,21.25) rectangle (2.5,17.5);
+\draw (-2.5,18.75) to[short] (-1.25,18.75);
+\draw (-1.25,18.75) to[short] (-1.25,20);
+\draw (-1.25,20) to[short] (0,20);
+\draw (-6.25,20.5) to[short] (-7.25,20.5);
+\draw (-7.25,20.5) to[short] (-7.25,22);
+\draw (-7.25,22) to[short] (3.75,22);
+\draw (3.75,22) to[short] (3.75,20.75);
+\draw (2.5,20.75) to[short] (5.5,20.75);
+\draw (2.5,18) to[short] (5.5,18);
+\draw (-6.25,19.5) to[short] (-7.25,19.5);
+\draw (-6.25,18.25) to[short] (-7.25,18.25);
+
+
+
+\draw [short] (-0.75,18.5) -- (0,18.5);
+\draw [short] (-0.75,18.5) -- (-1.25,18.5);
+\draw [short] (0,19.25) -- (1,18.5);
+\draw [short] (0,17.75) -- (1,18.5);
+\node [font=\LARGE] at (-7.75,19.5) {$X=1$};
+\node [font=\LARGE] at (-7.75,18.25) {$Y=0$};
+\node [font=\LARGE] at (-4.5,19.25) {$S=X \oplus Y \oplus Z$};
+\node [font=\LARGE] at (-1.25,18) {$Clock$};
+\node [font=\LARGE] at (-2.25,19) {S};
+\node [font=\LARGE] at (-7.5,20.5) {$Z$};
+\node [font=\LARGE] at (-4.5,17) {$Combinatorial Circuit$};
+\node [font=\LARGE] at (1.25,16.75) {$D Flip-flop$};
+\node [font=\LARGE] at (0.5,21) {$D$};
+\node [font=\LARGE] at (3,20.25) {$Q$};
+\node [font=\LARGE] at (3,18.25) {$\Bar{Q}$};
+\node [font=\LARGE] at (5,21) {Z};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

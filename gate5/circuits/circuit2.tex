@@ -1,0 +1,40 @@
+\begin{figure}[H]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+
+\draw (0,23.75) to[short] (1.25,23.75);
+\draw (5,20) to[short] (5,18.75);
+\draw (0,15) to[short] (1.25,15);
+\draw (-3.75,20) to[short] (-3.75,18.75);
+\draw (-3.75,19.75) to[short] (-3,19.75);
+\draw (-3.75,19) to[short] (-3,19);
+\draw (0.25,23.75) to[short] (0.25,23);
+\draw (1,23.75) to[short] (1,23);
+\draw (5,19.75) to[short] (4.25,19.75);
+\draw (5,19) to[short] (4.25,19);
+\draw (1,15) to[short] (1,15.75);
+\draw (0.25,15) to[short] (0.25,15.75);
+\draw (-3,19) to[short] (0.25,15.75);
+\draw (1,15.75) to[short] (4.25,19);
+\draw (4.25,19.75) to[short] (1,23);
+\draw (-3,19.75) to[short] (0.25,23);
+\draw (5,19.5) to[short] (5.5,19.5);
+\draw (-3.75,19.5) to[short] (-4.25,19.5);
+\draw [->, >=Stealth] (-4.25,19.5) -- (-4.25,18.75);
+\draw [->, >=Stealth] (5.5,19.5) -- (5.5,18.75);
+\draw [->, >=Stealth] (0.5,15) -- (0.5,14.25);
+\draw (0.5,23.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (0.5,25.25);
+\node [font=\LARGE] at (-4.25,18.25) {$I$};
+\node [font=\LARGE] at (-2,21.5) {$b_1$};
+\node [font=\LARGE] at (3,21.5) {$b_2$};
+\node [font=\LARGE] at (-1.75,17.25) {$b_3$};
+\node [font=\LARGE] at (3.25,17) {$b_4$};
+\node [font=\LARGE] at (5.5,18.25) {$I$};
+\node [font=\LARGE] at (0.5,13.75) {$I$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
