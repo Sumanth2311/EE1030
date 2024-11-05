@@ -1,0 +1,219 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv} 
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows} 
+
+%\def\inputGnumericTable{}                                
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{\textbf{2024-EE-14-26}}
+\author{AI24BTEC11027 - R Sumanth}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\columnsep}{2.5em}
+\begin{enumerate}
+
+\item The circuit shown in the figure with the switch $S$ open, is in steady state. After the 
+switch $S$ is closed, the time constant of the circuit in seconds is
+\input{circuits/circuit1}
+\begin{enumerate}
+    \item $1.25$
+    \item $0$
+    \item $1$
+    \item $1.5$\\
+\end{enumerate}
+
+\item Suppose signal $y(t)$ is obtained by the time-reversal of signal $x(t)$, i.e., $y(t)=x(-t),-\infty<t<\infty.$ Which one of the following options is always true for the convolution of $x(t)$ and $y(t)$?
+\begin{enumerate}
+    \item It is an even signal.
+    \item It is an odd signal. 
+    \item It is a causal signal.
+    \item It is an anti-causal signal. \\
+\end{enumerate}
+
+\item If $u(t)$ is the unit step function, then the region of convergence (ROC) of the 
+Laplace transform of the signal $x(t)=e^{t^2}[u(t-1)-u(t-10)]$ is
+\begin{enumerate}
+    \item $-\infty < Re(s) <\infty$
+    \item $Re(s)\geq 10$
+    \item $Re(s)\leq1$
+    \item $1\leq Re(s) \leq10$ \\
+\end{enumerate}
+\item A three phase, $50 Hz$, $6$ pole induction motor runs at $960 rpm$. The stator copper 
+loss, core loss, and the rotational loss of the motor can be neglected. The percentage 
+efficiency of the motor is
+\begin{enumerate}
+    \item $92$
+    \item $94$
+    \item $96$
+    \item $98$\\
+\end{enumerate}
+
+\item Which of the following complex functions is/are analytic on the complex plane? 
+\begin{enumerate}
+    \item $f(z)=jRe(z)$
+    \item $Im(z)$
+    \item $f(z)=e^{|z|}$
+    \item $f(z)=z^2-z$ \\
+\end{enumerate}
+
+
+\item The figure shows the single line diagram of a $4$-bus power network. Branches $b_1, b_2, b_3,$ and $b_4$ have impedances $4_z$,$z$ ,$2_z$, and $4_z$ per-unit (pu), respectively, where  
+$z=r+jx$, with $r>0$ and $x>0$. The current drawn from each load bus (marked 
+as arrows) is equal to $I$ pu, where $I\neq 0$. If the network is to operate with minimum 
+loss, the branch that should be opened is
+\input{circuits/circuit2}
+\begin{enumerate}
+    \item $b_1$
+    \item $b_2$
+    \item $b_3$
+    \item $b_4$ \\
+\end{enumerate}
+
+\item For  the block-diagram shown in the figure, the transfer function $\frac{C(s)}{R(s)}$ is
+\input{circuits/circuit3}
+\begin{enumerate}
+    \item $\frac{G(s)}{1+2G(s)}$
+    \item $-\frac{G(s)}{1+2G(s)}$
+    \item $\frac{G(s)}{1-2G(s)}$
+    \item $-\frac{G(s)}{1-2G(s)}$ \\
+\end{enumerate}
+\item Consider the standard second-order system of the form $\frac{\omega_n^2}{s^2+2\zeta\omega_n s+\omega_n^2}$ with the 
+poles $p$ and $p*$ having negative real parts. The pole locations are also shown in the 
+figure. Now consider two such second-order systems as defined below: \\
+System $1$: $\omega_n=3 rad/sec and \theta=60\degree$\\
+System $2$: $\omega_n=1 rad/sec and \theta=70\degree$\\
+\input{circuits/circuit4}
+Which one of the following statements is correct?
+\begin{enumerate}
+    \item Settling time of System $1$ is more than that of System $2$.
+    \item Settling time of System $2$ is more than that of System $1$.
+    \item Settling times of both the systems are the same. 
+    \item Settling time cannot be computed from the given information. \\
+\end{enumerate}
+\item Consider the cascaded system as shown in the figure. Neglecting the faster 
+component of the transient response, which one of the following options is a first
+order pole-only approximation such that the steady-state values of the unit step 
+responses of the original and the approximated systems are same?  
+\input{circuits/circuit5}
+\begin{enumerate}
+    \item $\frac{1}{s+1}$
+    \item $\frac{2}{s+1}$
+    \item $\frac{1}{s+20}$
+    \item $\frac{2}{s+20}$\\
+\end{enumerate}
+\item The table lists two instrument transformers and their features: 
+\begin{table}[h!]
+\renewcommand{\thetable}{1}
+    \centering
+   \input{tables/table.tex}
+\end{table}
+\begin{enumerate}
+    \item $X$ matches with $P$ and $Q$; $Y$ matches with $R$ and $S$.
+    \item $X$ matches with $P$ and $R$; $Y$ matches with $Q$ and $S$.
+    \item $X$ matches with $Q$ and $R$; $Y$ matches with $P$ and $S$.
+    \item $X$ matches with $Q$ and $S$; $Y$ matches with $P$ and $R$. \\
+\end{enumerate}
+\item Simplified form of the Boolean function \\ $F(P,Q,R,S)=\Bar{P}\Bar{Q}+\Bar{P}QS+P\Bar{Q}\Bar{R}\Bar{S}+P\Bar{Q}R\Bar{S}$ \\is 
+\begin{enumerate}
+    \item $\Bar{P}S+\Bar{Q}\Bar{S}$
+    \item $\Bar{P}\Bar{Q}+\Bar{Q}\Bar{S}$
+    \item $\Bar{P}Q+R\Bar{S}$
+    \item $p\Bar{S}+Q\Bar{R}$\\
+\end{enumerate}
+\item In the circuit, the present value of $Z$ is $1$. Neglecting the delay in the combinatorial 
+circuit, the values of $S$ and $Z$, respectively, after the application of the clock will be 
+\input{circuits/circuit6}
+\begin{enumerate}
+    \item $S=0,Z=0$
+    \item $S=0,Z=1$
+    \item $S=1,Z=0$
+    \item $S=1,Z=1$
+\end{enumerate}
+\item To obtain the Boolean function $F()X,Y=X\Bar{Y}+\Bar{X}$ the inputs $PQRS$ in the figure 
+should be
+\input{circuits/circuit7}
+\begin{enumerate}
+    \item $1010$
+    \item $1110$
+    \item $0110$
+    \item $0001$
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}
